@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0158)file:///C:/Users/qxb843/OneDrive%20-%20University%20of%20Tennessee/Brooks%20Band/Sensory%20Bridges%20_%20The%20Future%20of%20Self-Regulation%20Technology.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sensory Bridges | The Future of Self-Regulation Technology</title>
+<meta name="description" content="The Brooks Band™ is the first wearable platform that delivers objective, real-time self-regulation data for neurodivergent individuals.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --teal: #1A8A7D; --teal-dark: #14706A; --teal-light: #E8F5F3; --teal-mid: #C5E8E3;
+  --dark: #1C2B33; --warm-bg: #FAFAF7; --warm-card: #FFFFFF; --text: #2D3B41;
+  --text-light: #5A6B73; --border: #E2E8EA;
+  --serif: 'DM Serif Display', Georgia, serif; --sans: 'DM Sans', -apple-system, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); color: var(--text); background: var(--warm-bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+.hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem 1.5rem 4rem; background: linear-gradient(165deg, #0F2027 0%, #1A3A3A 40%, #1A8A7D 100%); overflow: hidden; }
+.hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 600px 400px at 20% 80%, rgba(26,138,125,0.3) 0%, transparent 70%), radial-gradient(ellipse 500px 500px at 80% 20%, rgba(201,168,76,0.08) 0%, transparent 60%); pointer-events: none; }
+.hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to top, var(--warm-bg), transparent); pointer-events: none; }
+.hero-inner { position: relative; z-index: 2; max-width: 800px; }
+.hero-badge { display: inline-block; padding: 0.4rem 1.2rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 2rem; backdrop-filter: blur(8px); background: rgba(255,255,255,0.05); animation: fadeDown 0.8s ease both; }
+.hero-logo { width: 220px; margin-bottom: 2.5rem; filter: brightness(0) invert(1); animation: fadeDown 0.8s ease 0.1s both; }
+.hero h1 { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.4rem); color: #fff; line-height: 1.15; margin-bottom: 1.2rem; font-weight: 400; animation: fadeDown 0.8s ease 0.2s both; }
+.hero h1 em { font-style: italic; color: var(--teal-mid); }
+.hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.65); max-width: 580px; margin: 0 auto 2.5rem; line-height: 1.7; animation: fadeDown 0.8s ease 0.3s both; }
+.hero-arrow { animation: fadeDown 0.8s ease 0.5s both, bobble 2.5s ease-in-out infinite 1.5s; cursor: pointer; text-decoration: none; }
+.hero-arrow svg { width: 32px; height: 32px; stroke: rgba(255,255,255,0.4); transition: stroke 0.3s; }
+.hero-arrow:hover svg { stroke: #fff; }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bobble { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+.pathways { padding: 5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+.pathways-intro { text-align: center; margin-bottom: 3rem; }
+.section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.8rem; }
+.pathways-intro h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--dark); margin-bottom: 0.8rem; }
+.pathways-intro p { color: var(--text-light); max-width: 560px; margin: 0 auto; font-size: 1.05rem; }
+.pathway-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+.pathway-card { background: var(--warm-card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem 1.5rem 1.8rem; text-align: center; cursor: pointer; transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); position: relative; overflow: hidden; text-decoration: none; display: block; }
+.pathway-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--teal); transform: scaleX(0); transition: transform 0.35s ease; }
+.pathway-card:hover { border-color: var(--teal); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(26,138,125,0.1); }
+.pathway-card:hover::before { transform: scaleX(1); }
+.pathway-icon { width: 48px; height: 48px; margin: 0 auto 1rem; background: var(--teal-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.pathway-icon svg { width: 24px; height: 24px; stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pathway-card h3 { font-family: var(--serif); font-size: 1.15rem; color: var(--dark); margin-bottom: 0.6rem; }
+.pathway-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.55; margin-bottom: 1.2rem; }
+.pathway-btn { display: inline-block; padding: 0.6rem 1.4rem; font-size: 0.85rem; font-weight: 600; border-radius: 100px; background: var(--teal); color: #fff; }
+
+.outcomes { padding: 4rem 1.5rem 5rem; background: #fff; }
+.outcomes-inner { max-width: 1100px; margin: 0 auto; }
+.outcomes-intro { text-align: center; margin-bottom: 3rem; }
+.outcomes-intro h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--dark); margin-bottom: 0.6rem; }
+.outcomes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.outcome-card { padding: 2rem; border-radius: 14px; border: 1px solid var(--border); background: var(--warm-bg); }
+.outcome-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.7rem; }
+.outcome-card h3 { font-family: var(--serif); font-size: 1.15rem; color: var(--dark); margin-bottom: 0.6rem; line-height: 1.35; }
+.outcome-card p { font-size: 0.95rem; color: var(--text-light); line-height: 1.6; }
+
+.opportunity { padding: 4rem 1.5rem 5rem; background: var(--warm-bg); }
+.opportunity-inner { max-width: 900px; margin: 0 auto; }
+.opportunity-intro { text-align: center; margin-bottom: 2.5rem; }
+.opportunity-intro h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--dark); margin-bottom: 0.6rem; }
+.opp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+.opp-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 1.8rem 1.5rem; }
+.opp-card .opp-num { font-family: var(--serif); font-size: 1.8rem; color: var(--teal); margin-bottom: 0.3rem; }
+.opp-card .opp-label { font-size: 0.88rem; color: var(--text-light); line-height: 1.5; }
+.opp-text { font-size: 1rem; color: var(--text-light); line-height: 1.75; max-width: 780px; margin: 0 auto; text-align: center; }
+.opp-text strong { color: var(--dark); }
+
+.platform { padding: 4rem 1.5rem 5rem; background: #fff; }
+.platform-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+.platform-intro h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2rem); color: var(--dark); margin-bottom: 0.6rem; }
+.platform-body { font-size: 0.98rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1.5rem; text-align: left; }
+.platform-nda { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--teal-light); border: 1px solid var(--teal-mid); padding: 0.9rem 1.5rem; border-radius: 12px; font-size: 0.9rem; font-weight: 500; color: var(--teal-dark); }
+.platform-nda svg { width: 18px; height: 18px; stroke: var(--teal); fill: none; stroke-width: 2; flex-shrink: 0; }
+
+.traction { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+.traction-intro { text-align: center; margin-bottom: 2rem; }
+.traction-intro h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2rem); color: var(--dark); margin-bottom: 0.4rem; }
+.traction-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+.stat { text-align: center; padding: 1.5rem 1rem; background: #fff; border-radius: 12px; border: 1px solid var(--border); }
+.stat-number { font-family: var(--serif); font-size: 2rem; color: var(--teal); line-height: 1; margin-bottom: 0.3rem; }
+.stat-desc { font-size: 0.85rem; color: var(--text-light); font-weight: 500; }
+.logo-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem 2.5rem; padding: 2rem 0; border-top: 1px solid var(--border); }
+.logo-bar span { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); width: 100%; text-align: center; margin-bottom: 0.5rem; }
+.logo-item { height: 36px; opacity: 0.55; filter: grayscale(100%); transition: all 0.3s; }
+.logo-item:hover { opacity: 1; filter: grayscale(0%); }
+
+.faq { padding: 4rem 1.5rem 5rem; background: #fff; }
+.faq-inner { max-width: 740px; margin: 0 auto; }
+.faq-intro { text-align: center; margin-bottom: 2.5rem; }
+.faq-intro h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2rem); color: var(--dark); }
+.faq-item { border-bottom: 1px solid var(--border); padding: 1.2rem 0; }
+.faq-q { display: flex; justify-content: space-between; align-items: center; cursor: pointer; gap: 1rem; user-select: none; }
+.faq-q h3 { font-size: 1rem; font-weight: 600; color: var(--dark); line-height: 1.4; }
+.faq-q .chevron { flex-shrink: 0; width: 20px; height: 20px; stroke: var(--text-light); transition: transform 0.3s; }
+.faq-item.open .chevron { transform: rotate(180deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
+.faq-item.open .faq-a { max-height: 300px; padding-top: 0.8rem; }
+.faq-a p { font-size: 0.95rem; color: var(--text-light); line-height: 1.65; }
+
+.note { padding: 4rem 1.5rem; max-width: 700px; margin: 0 auto; text-align: center; }
+.note-divider { width: 40px; height: 2px; background: var(--teal-mid); margin: 0 auto 2rem; }
+.note-photo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem; display: block; border: 4px solid var(--teal-light); }
+.note blockquote { font-size: 1.05rem; color: var(--text); line-height: 1.75; font-style: italic; margin-bottom: 1.2rem; }
+.note-author { font-size: 0.9rem; font-weight: 600; color: var(--dark); }
+.note-title { font-size: 0.82rem; color: var(--text-light); }
+.note-contact { margin-top: 0.8rem; font-size: 0.82rem; color: var(--text-light); }
+.note-contact a { color: var(--teal); text-decoration: none; }
+.note-contact a:hover { text-decoration: underline; }
+
+footer { padding: 2rem 1.5rem; text-align: center; border-top: 1px solid var(--border); background: #fff; }
+footer p { font-size: 0.78rem; color: var(--text-light); line-height: 1.6; }
+footer a { color: var(--teal); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 640px) {
+  .pathway-grid { grid-template-columns: 1fr; }
+  .outcomes-grid { grid-template-columns: 1fr; }
+  .traction-stats { grid-template-columns: repeat(2, 1fr); }
+  .opp-grid { grid-template-columns: 1fr; }
+  .hero { padding: 3rem 1.5rem 5rem; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">School Pilot Program Launching 2026</div>
+    <img src="./index_files/68f150459c8b3eeb6d6ff080_sensory-bridges-logo-bl.png" alt="Sensory Bridges" class="hero-logo">
+    <h1>Building the Future of <em>Self-Regulation</em> Technology</h1>
+    <p class="hero-sub">The Brooks Band™ is the first wearable platform that delivers objective, real-time self-regulation data for neurodivergent individuals — built for the educators, therapists, and families who support them.</p>
+    <a href="file:///C:/Users/qxb843/AppData/Local/Temp/be41e4d8-4bc7-40a8-a9d9-1736d0f2232b_files%20(7).zip.32b/index.html#pathways" class="hero-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+  </div>
+</section>
+
+<section class="pathways" id="pathways">
+  <div class="pathways-intro">
+    <p class="section-label">Take the Next Step</p>
+    <h2>How Can We Work Together?</h2>
+    <p>We're building our founding partner network. Choose the path that fits you.</p>
+  </div>
+  <div class="pathway-grid">
+    <a class="pathway-card" href="https://airtable.com/apposLx76kzOH4Y6V/pag0Oqtj7oAcsIdcP/form" target="_blank" rel="noopener">
+      <div class="pathway-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></div>
+      <h3>Schools &amp; Therapists</h3>
+      <p>Apply for our Founding Pilot Cohort for the 2026–27 school year. Limited spots available.</p>
+      <span class="pathway-btn">Apply for Pilot</span>
+    </a>
+    <a class="pathway-card" href="https://airtable.com/apposLx76kzOH4Y6V/paghdnGpRtLaWkPOF/form" target="_blank" rel="noopener">
+      <div class="pathway-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+      <h3>Investors</h3>
+      <p>Request the investor brief. We're building our founding investor group in edtech and assistive technology.</p>
+      <span class="pathway-btn">Request Brief</span>
+    </a>
+    <a class="pathway-card" href="https://airtable.com/apposLx76kzOH4Y6V/pagGKRpmvcrc3LRqg/form" target="_blank" rel="noopener">
+      <div class="pathway-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg></div>
+      <h3>Strategic Partners</h3>
+      <p>Explore collaboration in hardware, software, education platforms, or distribution.</p>
+      <span class="pathway-btn">Explore Partnership</span>
+    </a>
+    <a class="pathway-card" href="https://airtable.com/apposLx76kzOH4Y6V/pag8INdvIs6h7ZPJz/form" target="_blank" rel="noopener">
+      <div class="pathway-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+      <h3>Families &amp; Individuals</h3>
+      <p>Join the waitlist to be first to access the Brooks Band when it becomes available.</p>
+      <span class="pathway-btn">Join Waitlist</span>
+    </a>
+  </div>
+</section>
+
+<section class="outcomes">
+  <div class="outcomes-inner">
+    <div class="outcomes-intro">
+      <p class="section-label">The Brooks Band Platform</p>
+      <h2>What This Means for You</h2>
+    </div>
+    <div class="outcomes-grid">
+      <div class="outcome-card">
+        <p class="outcome-label">For Educators &amp; Therapists</p>
+        <h3>Objective behavioral data that replaces subjective observation</h3>
+        <p>Real-time self-regulation data formatted for IEP progress monitoring, 504 accommodation tracking, and intervention documentation — measurable outcomes your team can act on.</p>
+      </div>
+      <div class="outcome-card">
+        <p class="outcome-label">For Families</p>
+        <h3>Independence without constant reminders</h3>
+        <p>A discreet, non-judgmental tool that supports your child's self-awareness and builds confidence — replacing verbal correction with personal agency.</p>
+      </div>
+      <div class="outcome-card">
+        <p class="outcome-label">For Schools &amp; Districts</p>
+        <h3>Scalable support within existing compliance workflows</h3>
+        <p>Designed to integrate with the documentation systems your teams already use — built from the ground up for IDEA, FERPA, and COPPA compliance and the realities of special education operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="opportunity">
+  <div class="opportunity-inner">
+    <div class="opportunity-intro">
+      <p class="section-label">The Opportunity</p>
+      <h2>Why This Matters at Scale</h2>
+    </div>
+    <div class="opp-grid">
+      <div class="opp-card">
+        <div class="opp-num">7.5M</div>
+        <div class="opp-label">Children receive special education services under IDEA in the United States — an all-time high, growing 3–4% per year</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-num">30–47%</div>
+        <div class="opp-label">Of special education professionals' working hours are spent on documentation and progress reporting — time pulled directly from students</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-num">Zero</div>
+        <div class="opp-label">Wearable products on the market generate objective, continuous self-regulation data structured for IEP documentation workflows</div>
+      </div>
+    </div>
+    <p class="opp-text"><strong>The Brooks Band creates a new product category</strong> at the intersection of assistive technology, ambient behavioral assessment, and education compliance. Device sales paired with a subscription-based companion dashboard for schools and therapy practices. Educators and therapists are the primary distribution channel — they recommend, schools and districts purchase.</p>
+  </div>
+</section>
+
+<section class="platform">
+  <div class="platform-inner">
+    <div class="platform-intro">
+      <p class="section-label">Open Ecosystem</p>
+      <h2>Build on the Brooks Band Platform</h2>
+    </div>
+    <p class="platform-body">The Brooks Band generates continuous, structured behavioral data — timestamped, anonymized, and formatted for education compliance workflows. We're inviting strategic partners to explore how their tools can connect to our data output layer.</p>
+    <p class="platform-body">If you build IEP management software, therapeutic curriculum, behavioral analytics, school communication platforms, or assistive technology hardware, there may be a fit. We're exploring integration partnerships where your product consumes Brooks Band data to deliver better outcomes for the professionals and families you already serve.</p>
+    <div class="platform-nda">
+      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      All integrations are structured through partnership agreements that protect student privacy and IP on both sides. Start with a mutual NDA.
+    </div>
+  </div>
+</section>
+
+<section class="traction">
+  <div class="traction-intro">
+    <p class="section-label">Momentum</p>
+    <h2>Where We Are Today</h2>
+  </div>
+  <div class="traction-stats">
+    <div class="stat"><div class="stat-number">300+</div><div class="stat-desc">Stakeholder interviews completed</div></div>
+    <div class="stat"><div class="stat-number">3</div><div class="stat-desc">NSF I-Corps cohorts completed</div></div>
+    <div class="stat"><div class="stat-number">Filed</div><div class="stat-desc">U.S. non-provisional patent, March 2026</div></div>
+    <div class="stat"><div class="stat-number">IRB</div><div class="stat-desc">Approved university research protocol</div></div>
+    <div class="stat"><div class="stat-number">Active</div><div class="stat-desc">Enterprise hardware partnership with major consumer tech platform</div></div>
+    <div class="stat"><div class="stat-number">1st</div><div class="stat-desc">Place, NSF I-Corps Pitch Competition</div></div>
+  </div>
+  <div class="logo-bar">
+    <span>Developed with support from</span>
+    <img src="./index_files/nsf icorps.png" alt="NSF I-Corps" class="logo-item" style="height:42px;">
+    <img src="./index_files/utc engineering logo.png" alt="UTC Engineering" class="logo-item" style="height:30px;">
+    <img src="./index_files/NEC Project Healthcare.png" alt="Nashville EC Project Healthcare" class="logo-item" style="height:34px;">
+    <img src="./index_files/life science logo.png" alt="Life Science Tennessee" class="logo-item" style="height:28px;">
+    <img src="./index_files/summit logo.png" alt="Vanderbilt Builder Program" class="logo-item" style="height:28px;">
+    <img src="./index_files/mocs innovate logo.png" alt="Mocs Innovate" class="logo-item" style="height:24px;">
+  </div>
+</section>
+
+<section class="faq">
+  <div class="faq-inner">
+    <div class="faq-intro">
+      <p class="section-label">Questions</p>
+      <h2>What You Might Be Wondering</h2>
+    </div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>How does it work?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>The Brooks Band monitors the user's voice volume in real time. When volume exceeds a personalized threshold, the wristband delivers a discreet vibrotactile cue — private, non-visual, and undetectable to peers. No audio is recorded. All data is timestamped and formatted for IEP progress reporting and intervention tracking through the companion dashboard.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>Is this a medical device?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>No. The Brooks Band is classified as a general wellness device and does not make diagnostic or therapeutic claims. It is not an FDA-regulated medical device. This classification supports broad deployment in school and home settings without clinical licensure requirements.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>How is this different from existing tools?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>The Brooks Band is the first wearable platform designed specifically for self-regulation data in educational settings. Our patented approach was built from the ground up with input from occupational therapists, speech-language pathologists, special educators, and families — not adapted from consumer fitness technology.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>Who does it serve?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>The Brooks Band was designed for neurodivergent children — primarily those with autism, ADHD, sensory processing differences, and related conditions — who experience challenges with voice volume regulation. Up to 70% of individuals with autism experience atypical prosody affecting voice volume. The device serves the child directly while generating the documentation educators and therapists need.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>Can schools use this data for IEP and compliance documentation?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>Yes. The platform produces data formatted for IEP progress monitoring, 504 accommodation documentation, BIP evaluations, and MTSS/RTI tiered intervention tracking. We built it with compliance-readiness as a core requirement, not an afterthought. Designed from day one to meet FERPA, COPPA, and student data privacy requirements.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>What is the IP status?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>A non-provisional patent application was filed in March 2026 covering the core voice-monitoring architecture. All intellectual property is owned outright by Sensory Bridges, Inc.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>What does a pilot partnership involve?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>Founding pilot partners receive devices, onboarding support, and pre-built IEP goal templates at no cost. We provide a FERPA-compliant data use agreement and a school-ready dashboard for tracking student progress. No IT infrastructure changes are required. Pilot partners receive priority access to the commercial release and are credited as founding partners.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="this.closest(&#39;.faq-item&#39;).classList.toggle(&#39;open&#39;)"><h3>Who is behind Sensory Bridges?</h3><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div><div class="faq-a"><p>Sensory Bridges was founded by Megan Cales, an entrepreneur based in Chattanooga, TN, with deep roots in career development, special education ecosystems, and the IEP documentation process. The product was built in response to a real child's real need. The team includes advisory partnerships with occupational therapists, a patent attorney, a hardware R&amp;D partner, and a university engineering collaborator.</p></div></div>
+  </div>
+</section>
+
+<section class="note">
+  <div class="note-divider"></div>
+  <img src="file:///C:/Users/qxb843/AppData/Local/Temp/be41e4d8-4bc7-40a8-a9d9-1736d0f2232b_files%20(7).zip.32b/NT.png" alt="Megan Cales at Neurotech Frontiers Summit" class="note-photo">
+  <blockquote>Whether we move toward a pilot, explore collaboration, or simply trade ideas — I'm grateful you took the time to learn about what we're building. Let's continue the conversation.</blockquote>
+  <p class="note-author">Megan Cales</p>
+  <p class="note-title">Founder &amp; CEO, Sensory Bridges, Inc.</p>
+  <p class="note-contact"><a href="mailto:megancales@sensorybridges.com">megancales@sensorybridges.com</a> · <a href="https://calendly.com/megan-cales" target="_blank" rel="noopener">calendly.com/megan-cales</a> · <a href="https://www.linkedin.com/in/megancales/" target="_blank" rel="noopener">linkedin.com/in/megancales</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Sensory Bridges, Inc. · Chattanooga, TN · U.S. Patent Filed<br>
+  <a href="mailto:megancales@sensorybridges.com">megancales@sensorybridges.com</a> ·
+  <a href="https://www.linkedin.com/in/megancales/" target="_blank" rel="noopener">LinkedIn</a> ·
+  <a href="https://www.sensorybridges.com/" target="_blank" rel="noopener">sensorybridges.com</a></p>
+</footer>
+
+
+
+</body></html>
